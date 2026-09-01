@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0%;
+}
+
+body {
+    background-color: rgb(144, 156, 165);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    background-color: rgb(173, 179, 184);
+    position: fixed;
+    top: 0vh;
+    width: 90vw;
+    margin-left: 5vw;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.icone {
+    position: fixed;
+    top: 0vh;
+    width: 14vw;
+    height: 12vh;
+}
+
+.icone img {
+    margin-left: 1.5vw;
+    width: 10vw;
+    height: 10vh;
+}
+
+main {
+    position: relative;
+    width: 90vw;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.painelLateral {
+    background-color: rgb(173, 179, 184);
+    position: fixed;
+    top: 12vh;
+    margin-top: 4vh;
+    width: 14vw;
+    height: 75vh;
+}
+
+.conteudo {
+    position: absolute;
+    margin: 0vw 1vw 0vw 1vw;
+    width: 76vw;
+    height: 79vh;
+    margin-left: 14vw;
+}
+
+.atalhos {
+    margin-top: 2vh;
+    margin-left: 2vw;
+    list-style-type: decimal;
+    font-weight: bold;
+}
+
+.atalhos a {
+    text-decoration: none;
+    color: black;
+}
+
+.atalhos a, .atalhos li {
+    transition:color 0.3s;
+}
+
+.atalhos a:hover, .atalhos li:hover {
+    color: blue;
+}
+
+.sublista a, .sublista li {
+    transition: color 0.3s;
+}
+
+.sublista a:hover, .sublista li:hover{
+    color:blue;
+}
+
+.atalhos ul {
+    margin-top: 0.4vh;
+    font-size: 14px;
+    list-style-type: symbol;
+    list-style: "▹ ";
+    margin-left: 0.7vw;
+}
