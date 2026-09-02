@@ -11,7 +11,7 @@
 /* === Corpo do Site ===*/ 
 
 body {
-    min-height: 100vh;
+    min-height: fit-content;
 
     background: 
         radial-gradient(
@@ -146,8 +146,15 @@ header::after {
 
 main {
     position: relative;
-    width: 90vw;
+    
+    margin-top: 7vh;
     margin-left: 5vw;
+
+    padding-bottom: 20vh;
+
+    width: 90vw;
+    min-height: 75vh;
+    
     display: flex;
     flex-direction: row;
 }
@@ -215,14 +222,13 @@ main {
     list-style-type: decimal;
     font-weight: 600;
     font-family: 'Cinzel', Georgia, serif;
-    font-size: clamp(10px, 0.75vw, 14px);
+    font-size: clamp(11px, 0.75vw, 15px);
 }
 
 /* Links da lista */
 
 .atalhos a {
     position: relative;
-
     display: block;
 
     padding:
@@ -232,6 +238,7 @@ main {
     text-decoration: none;
 
     color: #17191a;
+    font-weight: bold;
 
     transition:
         color 0.25s ease,
@@ -281,7 +288,7 @@ main {
     margin-left: 0.7vw;
 
     font-family: "Libre Baskerville", Georgia, serif;
-    font-size: clamp(9px, 0.62vw, 12px);
+    font-size: clamp(10px, 0.68vw, 13px);
     list-style: "▹ ";
 }
 
@@ -297,7 +304,8 @@ main {
 
     color: #303435;
 
-    font-weight: 400;
+    font-weight: bold;
+
 }
 
 
@@ -339,9 +347,26 @@ header {
 /* Conteúdo Principal do Site */
 
 .conteudo {
-    position: absolute;
-    margin: 0 1vw 0 1vw;
-    width: 76vw;
-    height: 79vh;
-    margin-left: 14vw;
+    padding: 4vw;
+
+    min-height: fit-content;
+
+    position: relative;
+
+    width: 65vw;
+
 }
+
+.pagina {
+    position: sticky;
+    
+    left: 24vw;
+
+    width: 65vw;
+    height: fit-content;
+    
+    background-color: #d8d3c8;
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.35);
+}
+
