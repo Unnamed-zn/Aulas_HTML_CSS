@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Libre+Baskerville:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metamorphous&family=Oldenburg&family=Special+Elite&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
 
 /* === Definições Padrão ===*/ 
 
@@ -353,8 +357,14 @@ header {
 
     position: relative;
 
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vh;
+
     width: 65vw;
 
+    color: rgb(51, 51, 51);
+    font-size: 2vh;
 }
 
 .pagina {
@@ -370,3 +380,14 @@ header {
         0 5px 20px rgba(0, 0, 0, 0.35);
 }
 
+.conteudo h1, h2, h3, h4, h5, h6 {
+    color:#303435;
+    font-family: 'Oldenburg';
+}
+
+.cabecalhoTexto {
+    letter-spacing: 0.3vh;
+    color: #928f8a;
+    font-family: 'Winky Rough';
+    font-size: 1.8vh;
+}
