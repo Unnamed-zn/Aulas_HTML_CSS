@@ -13,12 +13,12 @@
 body {
     min-height: 100vh;
 
-    background-color: 
+    background: 
         radial-gradient(
             circle at 50% 20%,
             rgba(255, 255, 255, 0.04),
             transparent 55%
-        )
+        ),
         #68727a;
 
     color: #17191a;
@@ -41,7 +41,6 @@ body {
         );
 
     background-size: 4px 4px;
-
 }
 
 /* === Cabeçalho ===*/ 
@@ -309,6 +308,34 @@ main {
         rgba(70, 35, 39, 0.045);
 }
 
+
+/* Efeito de Papel Envelhecido (Documento Antigo) para Painel Lateral */
+
+.painelLateral,
+header {
+    isolation: isolate;
+}
+
+.painelLateral::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 3px,
+            rgba(0, 0, 0, 0.012) 4px
+        );
+
+    opacity: 0.7;
+}
+
 /* Conteúdo Principal do Site */
 
 .conteudo {
@@ -318,4 +345,3 @@ main {
     height: 79vh;
     margin-left: 14vw;
 }
-
