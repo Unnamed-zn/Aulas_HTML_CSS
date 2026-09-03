@@ -386,8 +386,14 @@ header {
 }
 
 .cabecalhoTexto {
+    margin-left: -3vw;
     letter-spacing: 0.3vh;
     color: #928f8a;
     font-family: 'Winky Rough';
     font-size: 1.8vh;
+}
+
+.conteudo p {
+    text-indent: 3vw;
+    text-align  : justify;
 }
