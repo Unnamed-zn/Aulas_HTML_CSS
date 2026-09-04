@@ -373,7 +373,6 @@ header {
     left: 24vw;
 
     width: 65vw;
-    height: fit-content;
     
     background-color: #d8d3c8;
     box-shadow:
@@ -395,7 +394,7 @@ header {
 
 .conteudo p {
     text-indent: 3vw;
-    text-align  : justify;
+    text-align: justify;
 }
 
 .conteudo a {
