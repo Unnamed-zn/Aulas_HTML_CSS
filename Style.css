@@ -421,20 +421,30 @@ header {
 }
 
 .gridItem {
-    transition: 2s ease;
-} 
+    max-height: 36.8vh;
+    border-radius: 5%;
+    transition: 0.3s ease;
+    border: solid 1px black;
+    transition: 2s;
+}
 
-.gridItem:hover {
-    background-color:  black;
+.gridOverlay {
+    position: relative;
+    top: -34.8vh;
+    
+    height: 36.8vh;
+    border: 1px solid black;
 }
 
 .gridOverlay h3 {
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    opacity: 0;
-    transition: 2s ease;
+    position: relative;
+    top: 32.8vh;
 }
 
-.gridOverlay h3:hover {
-    opacity: 1;
-} 
+.gridItem:hover {
+    color:blue;
+}
+
+.tabelaProvisoria tr {
+    justify-content: center;
+}
