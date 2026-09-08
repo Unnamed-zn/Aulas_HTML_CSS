@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Libre+Baskerville:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Metamorphous&family=Oldenburg&family=Special+Elite&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Valley+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 
@@ -405,3 +405,36 @@ header {
 .tachado {
     text-decoration: line-through;
 }
+
+.gridOrganizacoes {
+    position: relative;
+    top: -5vh;
+    display:grid;
+    grid-template-columns: repeat(3, 18vw);
+    gap: 1.5vw;
+    padding: 0 4vw;
+}
+
+.gridItem img {
+    margin: 1vw;
+    width: 16vw;
+}
+
+.gridItem {
+    transition: 2s ease;
+} 
+
+.gridItem:hover {
+    background-color:  black;
+}
+
+.gridOverlay h3 {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0;
+    transition: 2s ease;
+}
+
+.gridOverlay h3:hover {
+    opacity: 1;
+} 
