@@ -4,7 +4,7 @@
 
 
 
-/* === Definições Padrão ===*/ 
+/* === Definições Padrão ===*/
 
 * {
     margin: 0;
@@ -12,17 +12,15 @@
     box-sizing: border-box;
 }
 
-/* === Corpo do Site ===*/ 
+/* === Corpo do Site ===*/
 
 body {
     min-height: fit-content;
 
-    background: 
-        radial-gradient(
-            circle at 50% 20%,
+    background:
+        radial-gradient(circle at 50% 20%,
             rgba(255, 255, 255, 0.04),
-            transparent 55%
-        ),
+            transparent 55%),
         #68727a;
 
     color: #17191a;
@@ -34,28 +32,22 @@ body {
     font-family: 'Libre Baskerville', Georgia, serif;
 
     background-image:
-        linear-gradient(
+        linear-gradient(rgba(255, 255, 255, 0.015) 1px,
+            transparent 1px),
+        linear-gradient(90deg,
             rgba(255, 255, 255, 0.015) 1px,
-            transparent 1px
-        ),
-        linear-gradient(
-            90deg,
-            rgba(255, 255, 255, 0.015) 1px,
-            transparent 1px
-        );
+            transparent 1px);
 
     background-size: 4px 4px;
 }
 
-/* === Cabeçalho ===*/ 
+/* === Cabeçalho ===*/
 
 header {
     background:
-        linear-gradient(
-            to bottom,
+        linear-gradient(to bottom,
             #b3b6b7,
-            #9fa5a8
-        );
+            #9fa5a8);
 
     position: fixed;
     top: 0;
@@ -63,7 +55,7 @@ header {
 
     width: 90vw;
     height: 12vh;
-    
+
     display: flex;
     flex-direction: row;
 
@@ -91,12 +83,10 @@ header::after {
     height: 1px;
 
     background:
-        linear-gradient(
-            to right,
+        linear-gradient(to right,
             rgba(65, 27, 31, 0.8),
             rgba(65, 27, 31, 0.25),
-            transparent
-        );
+            transparent);
 }
 
 /* Compartimento do Ícone*/
@@ -124,8 +114,7 @@ header::after {
     object-fit: contain;
 
     filter:
-        grayscale(20%)
-        contrast(1.05);
+        grayscale(20%) contrast(1.05);
 
     opacity: 0.9;
 
@@ -140,8 +129,7 @@ header::after {
     opacity: 1;
 
     filter:
-        grayscale(0%)
-        contrast(1.1);
+        grayscale(0%) contrast(1.1);
 
     transform: scale(1.025);
 }
@@ -150,7 +138,7 @@ header::after {
 
 main {
     position: relative;
-    
+
     margin-top: 7vh;
     margin-left: 5vw;
 
@@ -158,21 +146,18 @@ main {
 
     width: 90vw;
     min-height: 75vh;
-    
+
     display: flex;
-    flex-direction: row;
 }
 
 /* Painel de Navegação Lateral */
 
 .painelLateral {
     background:
-        linear-gradient(
-            135deg,
+        linear-gradient(135deg,
             rgba(186, 190, 191, 0.96),
-            rgba(157, 164, 167, 0.96)
-        );
-    
+            rgba(157, 164, 167, 0.96));
+
     position: fixed;
 
     top: 16vh;
@@ -185,7 +170,7 @@ main {
 
     box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.25),
         inset 0 0 20px rgba(255, 255, 255, 0.08);
-    
+
     overflow: hidden;
 
 }
@@ -198,10 +183,7 @@ main {
     display: block;
 
     padding:
-        1.2vh
-        1vw
-        0.8vh
-        1vw;
+        1.2vh 1vw 0.8vh 1vw;
 
     border-bottom:
         1px solid rgba(30, 30, 30, 0.3);
@@ -226,7 +208,7 @@ main {
     list-style-type: decimal;
     font-weight: 600;
     font-family: 'Cinzel', Georgia, serif;
-    font-size: clamp(11px, 0.75vw, 15px);
+    font-size: clamp(9px, 0.65vw, 13px);
 }
 
 /* Links da lista */
@@ -236,8 +218,7 @@ main {
     display: block;
 
     padding:
-        0.8vh
-        0.4vw;
+        0.8vh 0.4vw;
 
     text-decoration: none;
 
@@ -269,7 +250,7 @@ main {
 
     transition:
         transform 0.25s ease;
-    
+
 }
 
 .atalhos a:hover {
@@ -292,7 +273,7 @@ main {
     margin-left: 0.7vw;
 
     font-family: "Libre Baskerville", Georgia, serif;
-    font-size: clamp(10px, 0.68vw, 13px);
+    font-size: clamp(9px, 0.65vw, 13px);
     list-style: "▹ ";
 }
 
@@ -303,13 +284,12 @@ main {
 
 .sublista a {
     padding:
-        0.55vh
-        0.3vw;
+        0.55vh 0.3vw;
 
     color: #303435;
 
     font-weight: bold;
-    
+
 }
 
 
@@ -323,8 +303,7 @@ main {
 
 /* Efeito de Papel Envelhecido (Documento Antigo) para Painel Lateral */
 
-.painelLateral,
-header {
+.painelLateral, header {
     isolation: isolate;
 }
 
@@ -338,12 +317,10 @@ header {
     pointer-events: none;
 
     background:
-        repeating-linear-gradient(
-            0deg,
+        repeating-linear-gradient(0deg,
             transparent,
             transparent 3px,
-            rgba(0, 0, 0, 0.012) 4px
-        );
+            rgba(0, 0, 0, 0.012) 4px);
 
     opacity: 0.7;
 }
@@ -351,9 +328,6 @@ header {
 /* Conteúdo Principal do Site */
 
 .conteudo {
-    padding: 4vw;
-
-    min-height: fit-content;
 
     position: relative;
 
@@ -361,26 +335,30 @@ header {
     flex-direction: column;
     gap: 1.2vh;
 
-    width: 65vw;
+    max-width: inherit;
 
     color: rgb(51, 51, 51);
     font-size: 2vh;
 }
 
 .pagina {
+    padding: 4vw;
     position: sticky;
-    
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+
     left: 24vw;
 
     width: 65vw;
-    
+
     background-color: #d8d3c8;
     box-shadow:
         0 5px 20px rgba(0, 0, 0, 0.35);
 }
 
 .conteudo h1, h2, h3, h4, h5, h6 {
-    color:#303435;
+    color: #303435;
     font-family: 'Oldenburg';
 }
 
@@ -408,11 +386,9 @@ header {
 
 .gridOrganizacoes {
     position: relative;
-    top: -5vh;
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(3, 18vw);
     gap: 1.5vw;
-    padding: 0 4vw;
 }
 
 .gridItem img {
@@ -436,6 +412,7 @@ header {
 
     top: -2vh;
     font-family: 'Trebuchet MS';
+    font-size: 14px;
 }
 
 .tabelaIgrejas {
@@ -445,7 +422,6 @@ header {
 }
 
 .tabelaIgrejas td {
-    border: solid 1px rgba(0,0,0,0.250);
     font-weight: 700;
     font-size: 14px;
     text-align: center;
@@ -453,4 +429,46 @@ header {
 
 .tabelaIgrejas img {
     width: 5vw;
+}
+
+@media (width<=1024px) {
+    main {
+        top: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .pagina {
+        position: absolute;
+        top: 2vh;
+        left: 14vw;
+        width: 76vw;
+    }
+
+    .conteudo * {
+        font-size: 16px;
+    }
+
+    .conteudo h1 {
+        font-size: 30px;
+    }
+
+    .painelLateral {
+        position: absolute;
+        top: 5vh;
+        left: 0vw;
+    }
+
+    .gridOrganizacoes {
+        column-gap: 5.5vw;
+        row-gap: 1.5vh;
+    }
+
+    .gridItem {
+        width: 21vw;
+    }
+    
+    .gridItem h2 {
+        top: -1vh;
+    }
 }
