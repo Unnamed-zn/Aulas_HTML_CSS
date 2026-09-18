@@ -139,7 +139,7 @@ header::after {
 main {
     position: relative;
 
-    margin-top: 7vh;
+    margin-top: 4vh;
     margin-left: 5vw;
 
     padding-bottom: 20vh;
@@ -160,8 +160,8 @@ main {
 
     position: fixed;
 
-    top: 16vh;
-    left: 5vw;
+    top: 19vh;
+    left: 8vw;
     width: 14vw;
     height: 75vh;
 
@@ -343,12 +343,13 @@ main {
 
 .pagina {
     padding: 4vw;
-    position: sticky;
+    position: absolute;
     display: flex;
     flex-direction: column;
     gap: 3vh;
 
-    left: 24vw;
+    top: 10vh;
+    left: 20vw;
 
     width: 65vw;
 
@@ -433,16 +434,27 @@ main {
 
 @media (width<=1024px) {
     main {
-        top: 0;
+        position: relative;
+        margin: 0;
         display: flex;
-        justify-content: center;
+    }
+
+    header {
+        height: 8vh;
+        left: 0;
+        width: 100vw;
+    }
+
+    .icone {
+        top: 1vh;
+        height: 6vh;
     }
 
     .pagina {
         position: absolute;
-        top: 2vh;
-        left: 14vw;
-        width: 76vw;
+        top: 8vh;
+        left: 18vw;
+        width: 82vw;
     }
 
     .conteudo * {
@@ -454,18 +466,20 @@ main {
     }
 
     .painelLateral {
-        position: absolute;
-        top: 5vh;
-        left: 0vw;
+        position: fixed;
+        width: 18vw;
+        height: 92vh;
+        top: 8vh;
+        left: 0;
     }
 
     .gridOrganizacoes {
-        column-gap: 5.5vw;
+        column-gap: 7.5vw;
         row-gap: 1.5vh;
     }
 
     .gridItem {
-        width: 21vw;
+        width: 23vw;
     }
     
     .gridItem h2 {
